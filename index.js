@@ -13,6 +13,7 @@ app.use('/', router)
 const pool = require('./connection/connectionPool')
 pool.getConnection((err, connection)=>{
     if(err) { 
+        console.log(err)
         console.log('Unable to set Connection to Database') 
     }else{
         console.log('Database Connection Established')
