@@ -21,4 +21,4 @@ pool.getConnection((err, connection)=>{
 })
 
 app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(port, () => console.log(`Instagram Server is listening on port ${port}. Open your Browser to http://localhost:7000 to view.`))
+app.listen(port, () => console.log(`Instagram Server is listening on port ${port}. Open your Browser to http://localhost:${port} to view.`))
